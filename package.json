@@ -1,7 +1,7 @@
 {
   "name": "school-management-system",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "repository": "https://github.com/maker-shihab/school-management-system.git",
   "author": "Shihab <73121069+maker-shihab@users.noreply.github.com>",
   "license": "MIT",
