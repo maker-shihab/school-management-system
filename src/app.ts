@@ -1,8 +1,10 @@
-import express from "express";
-const app = express();
+import express, { Application } from "express";
+import router from "./app/routes";
+const app: Application = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use("/api/v1", router);
 
 export default app;
